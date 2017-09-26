@@ -1,6 +1,7 @@
 mode = input('Mode type:');
 if mode == 1 %mode 1 runs the whole program
     %----------------Train or load the trained model--------------------------------
+    %make sure we only train model once to save time
     net = alexnet();
     featureLayer = 'fc7';
     TrainModeExist = exist('classifier.mat','file');
@@ -13,7 +14,7 @@ if mode == 1 %mode 1 runs the whole program
         [classifier,testSet]=myTrain(net,featureLayer);
         save('testSet.mat','testSet');
         save('classifier.mat','classifier')
-        traintpye='run';
+        traintype='run';
     end
     
     %---------------- get 20 sample images prepared------------------------
