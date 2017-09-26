@@ -4,8 +4,7 @@ function [classifier,testSet]=myTrain(net,featureLayer)
 %categories = {'0', '1', '2','3','4','5','6','7','8','9'};
 %imds = imageDatastore(fullfile(categories), 'LabelSource', 'foldernames');
 %tbl = countEachLabel(imds);
-%minSetCount = min(tbl{:,2}); % determine the smallest amount of images in a category
-% Use splitEachLabel method to trim the set.
+%minSetCount = min(tbl{:,2}); % determine the smallest amount of images in a category.
 %imds = splitEachLabel(imds, minSetCount, 'randomize');
 DatasetExist=exist('myImage_Datasets.mat','file');
 if DatasetExist==2
