@@ -29,5 +29,6 @@ Testing model: myLabel.m and predict.m
     1. myLabel.m receives one sample image and returns a forecasting using a trained model which saved 
     by myTrain.m.
     2. predict.m selects 20 random pictures in testSet and does precition simultaneously using myLabel.m.
+    use predict(1) to do a new forecasting, or use predict(2) to show the sample.
     
     
