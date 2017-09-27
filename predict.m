@@ -1,4 +1,4 @@
-mode = input('Mode type:');
+function predict(mode)
 if mode == 1 %mode 1 runs the whole program
     %----------------Train or load the trained model--------------------------------
     %make sure we only train model once to save time
